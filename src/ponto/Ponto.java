@@ -31,5 +31,7 @@ public class Ponto {
         // TODO code application logic here
         Ponto3D p3= new Ponto3D();
         p3.printPonto3D();
+        // Vai chamar o print de Ponto3D e não o de Ponto
+        p3.print();
     }   
 }

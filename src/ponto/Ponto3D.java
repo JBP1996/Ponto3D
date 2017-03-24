@@ -12,7 +12,7 @@ package ponto;
 public class Ponto3D extends Ponto{
     int z;
     public Ponto3D (int x, int y, int z)   {
-        super(x,y);
+        super(x,y); // chama o construtor Ponto(x, y)
         this.z = z;
     }
     
@@ -24,4 +24,10 @@ public class Ponto3D extends Ponto{
         super.print();
         System.out.println(","+z);
     }
+    
+    public void print ( )     {
+        System.out.println ("\nMétodo print da classe Ponto3D");
+        super.print ( ); System.out.print (", "+z);
+    }
+
 }
